@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="alert-box" id="alert">
+    알림창 <button onclick="열기('none')" class="btn_close"></button>
+  </div>
+  <button onclick="열기('block')">버튼1</button>
+  <button onclick="열기('block')">버튼2</button>
+
+  <script>
+    function 열기(구멍) {
+      document.getElementById('alert').style.display = 구멍;
+    }
+
+    // function 열기() {
+    //   document.getElementById('alert').style.display = 'block'
+    // }
+    // function 닫기() {
+    //   document.getElementById('alert').style.display = 'none'
+    // }
+  </script>
+</body>
+
+</html>

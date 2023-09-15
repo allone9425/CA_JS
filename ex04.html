@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="alert-box" id="alert">
+    <p id="title">알림창</p>
+     <button onclick="알림창('','none')" class="btn_close"></button>
+  </div>
+  <button onclick="알림창('아이디를 입력해주세요.','block')">버튼1</button>
+  <button onclick="알림창('비밀번호를 입력해주세요.','block')">버튼2</button>
+
+  <script>
+    function 알림창(메세지, 온오프) {
+      document.getElementById('alert').style.display = 온오프;
+      document.getElementById('title').innerHTML = 메세지;
+    }
+  </script>
+</body>
+
+</html>

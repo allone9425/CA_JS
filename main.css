@@ -1,0 +1,11 @@
+.alert-box{
+  background-color: skyblue;
+  padding: 20px;
+  color:#fff;
+  border-radius: 5px;
+  display: none;
+  font-size: 20px;
+}
+.btn_close {border:none; background-color:transparent;}
+.btn_close:after {content: "\00d7"; font-size:20pt;}
+

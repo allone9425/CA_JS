@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  function Game369(number) {
+      if (number % 3 == 0) {
+        console.log("박수")
+      } else {
+        console.log("통과")
+      }
+    }
+    Game369(15);
+
+
+  function Game369Plus(number) {
+      if (number % 9 == 0) {
+        console.log("박수 X2")
+      } else if(number % 3 == 0) {
+        console.log("박수")
+      }
+      else
+      {
+        console.log("통과")        
+      }
+    }
+    Game369Plus(11);
+
+    function examPoint(score1,score2){
+      if (score1 < 40 || score2 < 40){
+      console.log('불합격')
+    } else if(score1 + score2 > 120) {
+      console.log('합격')
+    }
+    else{
+      console.log('불합격')
+    }
+  }
+    examPoint(100,59);
+
+
+
+  //   function examPoint(score1,score2){
+  //     if (score1 + score2 > 120 && score1 < 40 || score2 < 40){
+  //     console.log('합격')
+  //   } else {
+  //     console.log('불합격')
+  //   }
+  // }
+  //   examPoint(39,39);
+
+  // function 삼육구게임() {
+  //   document.getElementById('number').addEventListener('focus', function () {
+  //     if ((number % 3) == '0') {
+  //       console.log("박수")
+  //     } else {
+  //       console.log("통과")
+  //     }
+  //   })
+  // }
+
+
+  // function 삼육구게임() {
+  //   if((document.getElementById('number').value % 3) == 0 ) {
+  //     console.log("박수")
+  //   } else{
+  //     console.log("통과")
+  //   }
+  // }
+
+  // function 삼육구게임() {
+  //   if((three % 3) == 0 ) {
+  //     console.log("박수")
+  //   } else{
+  //     console.log("통과")
+  //   }
+  // }
+</script>
+
+</html>

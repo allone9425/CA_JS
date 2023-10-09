@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container mt-3">
+    <div class="card p-3">
+      <span class="name">상품명</span> / <span class="price">가격</span>
+      <p><span class="brand">브랜드</span> / <span class="inch">인치</span> / <span class="color">색상</span></p>
+    </div>
+  </div>
+
+  <div>
+    
+  </div>
+  <script>
+    var car = ['소나타', 50000, 'white'];
+    car[0] = '제네시스';
+    car[3] = '아반떼'
+    console.log(car[0]);
+    
+    console.log(car); 
+
+    var car2 = {name : '소나타', price : 50000}
+    console.log(car2)
+
+    var computer2 = {brand : '삼성', inch : 15.6, color : 'white'}
+
+
+    console.log(computer2['brand'])
+    console.log(computer2.inch)
+  
+    var computer3 = ['삼성', 15.6, 'white', '2TB']
+  console.log(computer3.slice(1,3)
+  )  
+
+  console.log ('오늘의 숙제는 아래부터')
+  //car3에 저장된 소나타 상품명과 가격 50000을 html에 집어넣기 
+  var car3 = { name : '소나타', price : 50000 }
+  document.querySelector('.name').innerHTML = car3['name'];
+  document.querySelector('.price').innerHTML = car3['price'];
+
+  //TIL 작성용
+  var computer4 = {brand : '삼성', inch : 15.6, color : 'white'}
+  document.querySelector('.brand').innerHTML = computer4['brand'];
+  document.querySelector('.inch').innerHTML = computer4['inch'];
+  document.querySelector('.color').innerHTML = computer4['color'];
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="test">
+
+  </div>
+  <div id="test2">
+
+  </div>
+
+  <script>
+    var a = document.createElement('p');
+    a.innerHTML = '안녕';
+    document.querySelector('#test').appendChild(a);
+    
+    var 템플릿 = '<p>안녕하세요</p>'
+    document.querySelector('#test2').insertAdjacentHTML('beforeend' ,템플릿)
+ 
+ </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="hello">안녕하세요.</p>
+    <button id="btn">버튼</button>
+    <button id="btn2">버튼2</button>
+    <button id="btn3">버튼3</button>
+
+    <script>
+      //1. html 변경하기
+      document.getElementById("hello").innerHTML = "반갑습니다.";
+
+      //2. 이벤트리스너 실행하기
+      document.getElementById("btn").addEventListener("click", function () {
+        document.getElementById("hello").innerHTML = "잘부탁드립니다.";
+      });
+      // ☞ 버튼을 클릭하면 잘부탁드립니다로 바뀌게 됨.
+
+      //3. 자료 저장를 저장하기 위해 > [변수]
+      var name = "Lee"; // 재선언과 재할당 가능
+      let age = 20; // 재할당 가능, 재선언 불가
+      const abo = "b"; // 재선언 불가, 재할당 불가
+      name; // Lee가 담겨 있음
+
+      //4. 긴 코드를 간단하게 [함수]
+      function 인사() {
+        document.getElementById("hello").innerHTML = "날씨가 좋습니다.";
+      }
+      인사(); //실행
+
+      //5. 함수 업그레이드 > [파라미터문법] 매개변수를 넣어서 사용이 가능함.
+      function 소개(나이) {
+        document.getElementById("hello").innerHTML = 나이;
+      }
+      document.getElementById("btn2").addEventListener("click", function () {
+        소개("3살입니다.");
+      });
+
+      //6. array & object
+      var names = ["Lee", "Kim", "Park", "Back"];
+      name[0]; //Lee 출력 0부터 시작함
+
+      var person = { name: "Lee", age: 33 };
+      person["age"]; //나이만 출력
+
+      //7. 조건부 출력 IF
+      if (1 < 3) {
+        console.log("3은 1보다 큽니다");
+      } else {
+        console.log("3은 1보다 크지 않습니다");
+      }
+
+      //8. 반복문 for
+      for (var i = 0; i < 3; i++) {
+        console.log("반가워요");
+      }
+      // ☞ 3이 되기 전까지 반복이 됨
+
+      [1, 2, 3, 4].forEach(function () {
+        //배열의 갯수만큼 반복함
+        console.log("반가워요");
+      });
+    </script>
+  </body>
+</html>
